@@ -7,9 +7,8 @@
     background-repeat: no-repeat;
 
     .header-i {
-        font-size: 17px;
         padding: 17px;
-        background-color: rgba(68, 56, 35, 0.5);
+        background-color: rgba(52, 58, 64, .5);
         color: #fff;
         position: fixed;
         top: 15px;
@@ -21,14 +20,14 @@
         text-align: center;
         color: $title-color;
         width: 80%;
-        height: 70%;
+        height: 80%;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         margin: 0 auto;
 
         .main-title {
-            font-size: 60px;
+            font-size: 70px;
             font-weight: 700;
         }
 
@@ -58,6 +57,51 @@
             transition: background-color .15s;
         &:hover {
             background-color: #015884;}
+        }
+    }
+
+    .side-menu {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #0879b2;
+        overflow-x: hidden;
+        padding-top: 30px;
+        transition: 0.5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        h1 {
+            font-size: 20px;
+            color: #fff;
+            padding: 0 10px;
+            margin-bottom: 20px;
+            font-weight: 200;
+            font-family: $main-font;
+        }
+
+        a {
+            padding: 20px 10px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #fff;
+            display: block;
+            transition: 0.3s;
+            cursor: pointer;
+            font-family: $main-font;
+            transition: background-color .15s;
+            
+            &:hover {
+                background-color: #015884;
+            }
+        }
+
+        #close-button {
+            display: none;
         }
     }
 }

@@ -103,9 +103,8 @@ input, select {
 }
 
 .header .header-i {
-  font-size: 17px;
   padding: 17px;
-  background-color: rgba(68, 56, 35, 0.5);
+  background-color: rgba(52, 58, 64, 0.5);
   color: #fff;
   position: fixed;
   top: 15px;
@@ -117,7 +116,7 @@ input, select {
   text-align: center;
   color: #443823;
   width: 80%;
-  height: 70%;
+  height: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,7 +131,7 @@ input, select {
 }
 
 .header .header-info .main-title {
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 700;
 }
 
@@ -166,6 +165,61 @@ input, select {
 
 .header .header-info .buttonblue:hover {
   background-color: #015884;
+}
+
+.header .side-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #0879b2;
+  overflow-x: hidden;
+  padding-top: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.header .side-menu h1 {
+  font-size: 20px;
+  color: #fff;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  font-weight: 200;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.header .side-menu a {
+  padding: 20px 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-transition: background-color .15s;
+  transition: background-color .15s;
+}
+
+.header .side-menu a:hover {
+  background-color: #015884;
+}
+
+.header .side-menu #close-button {
+  display: none;
 }
 
 @media screen and (min-width: 1000px) {
