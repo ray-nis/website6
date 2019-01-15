@@ -8,6 +8,7 @@
     align-items: center;
 
     h1 {
+        @include titles($title-color);
         margin-bottom: 20px;
     }
 
