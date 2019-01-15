@@ -1,7 +1,46 @@
 $title-color: #443823;
 $main-font: 'Source Sans Pro',sans-serif;
+$pharagraphs-color: #6c757d;
 
 
+
+
+@mixin button($bgcolor) {
+    text-decoration: none;
+    color: #fff;
+    font-family: $main-font;
+    line-height: 50px;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+    font-weight: 700;
+    font-size: 16px;
+    padding: 8px 40px;
+    margin: 0 auto;
+    transition: background-color .15s;
+    background-color: $bgcolor;
+    cursor: pointer;
+}
+
+.titles {
+    font-size: 35px;
+    text-align: center;
+    font-family: $main-font;
+    color: $title-color;
+}
+
+.pharagraphs {
+    font-size: 22px;
+    text-align: center;
+    font-family: $main-font;
+    color: $pharagraphs-color;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
