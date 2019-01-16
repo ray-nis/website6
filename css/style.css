@@ -402,4 +402,64 @@ input, select {
     margin: 30px 40px 60px 30px;
   }
 }
+
+.download {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/bg-callout.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.download h1 {
+  font-size: 40px;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #443823;
+  width: 80%;
+  font-size: 60px;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.download a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 50px;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  font-size: 16px;
+  padding: 8px 40px;
+  margin: 0 auto;
+  -webkit-transition: background-color .15s;
+  transition: background-color .15s;
+  background-color: #0879b2;
+  cursor: pointer;
+}
+
+.download a:hover {
+  background-color: #015884;
+}
+
+@media screen and (min-width: 1000px) {
+  .download h1 {
+    width: 40%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
