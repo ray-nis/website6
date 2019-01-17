@@ -231,6 +231,16 @@ input, select {
   display: none;
 }
 
+#up-arrow {
+  padding: 17px 19px;
+  background-color: rgba(52, 58, 64, 0.5);
+  color: #fff;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  display: none;
+}
+
 @media screen and (min-width: 1000px) {
   .header {
     height: 100vh;

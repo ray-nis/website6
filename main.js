@@ -25,3 +25,17 @@ for (let i = 0; i < menuLinks.length; i++) {
         console.log("lol");
     })
 }
+
+let currentScroll = document.documentElement.scrollTop;
+let arrow = document.querySelector("#up-arrow");
+
+window.onscroll = function () {
+    arrow.display = "none";
+    currentScroll = document.documentElement.scrollTop;
+    if (currentScroll < 400) {
+        arrow.style.display = "none";
+    }
+    else if (currentScroll > 400) {
+        arrow.style.display = "block";
+    }
+};
