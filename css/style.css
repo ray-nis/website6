@@ -588,4 +588,51 @@ input, select {
   height: 400px;
   width: 100%;
 }
+
+.social {
+  width: 100%;
+  height: 150px;
+}
+
+.social h6 {
+  text-align: center;
+  font-size: 15px;
+  color: #aeb0b2;
+  margin-top: 30px;
+}
+
+.social-container {
+  width: 60%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 70px;
+}
+
+.social-container i {
+  background: #0879b2;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  padding: 10px;
+  font-size: 20px;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.social-container i:hover {
+  background-color: #015884;
+}
+
+@media screen and (min-width: 1000px) {
+  .social-container {
+    width: 30%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
