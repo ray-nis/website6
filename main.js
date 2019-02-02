@@ -22,7 +22,6 @@ for (let i = 0; i < menuLinks.length; i++) {
     menuLinks[i].addEventListener("click", ()=> {
         document.querySelector("#side-menu").style.width = "0";
         closeButton.style.display = "none";
-        console.log("lol");
     })
 }
 
